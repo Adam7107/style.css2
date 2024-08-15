@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e4e1e1;
+            color: green;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(255, 0, 0);
+            text-decoration: blueviolet;
+        }
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm adam derbel, a web developer with a passion for creating beautiful and functional websites.</p>
+        <video controls>
+            <source src="intro.mp4" type="video/mp4">
+           
+        </video>
+        <audio controls>
+            <source src="background-music.mp3" type="audio/mp3">
+            
+        </audio>
+    </section>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web developer with experience in front-end and back-end technologies. I enjoy building projects that are both aesthetically pleasing and functional.</p>
+    </section>
+
+ 
+    <section id="work">
+        <h2>My Work</h2>
+        <ul>
+            <li><a href="project1.html">Project 1</a></li>
+            <li><a href="project2.html">Project 2</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+        </ul>
+        <table border="1">
+            <caption>Work Experience</caption>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Years</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GOMYCODE</td>
+                    <td>Developer</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>polytech</td>
+                    <td>Student</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my <a href="resume.pdf" download>resume</a>.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 Adam Derbel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
